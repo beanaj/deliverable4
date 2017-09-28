@@ -3,8 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Main Page</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
+<div class = "menubar">
+	<a href="#login">LOGIN</a>
+  	<a href="#register">REGISTER</a>
+</div>
+
 <body>
+	<h1><a href="#HOME">HOME</a> | <a href="#SEARCH">SEARCH</a> | <a href="#INFO">INFO</a></h1>
+	<canvas id="canvas" width="600" height="800" style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+	
+	<script>
+		// Content Placeholder 
+		var c=document.getElementById("canvas");
+		var ctx=c.getContext("2d");
+		ctx.rect(0,0,800,600);
+		ctx.fillStyle = "gray";
+		ctx.fill();
+	</script>
+	
 </body>
+
 </html>

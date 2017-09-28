@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.menubar {
+	background-color: #FFD700;
+	overflow: hidden;
+	font-family: helvetica;
+}
+body h1 a {
+	text-decoration: none;
+	color: black;
+}
+body h1 {
+	font-family: helvetica;
+	font-size: 36px;
+	top: 10%;
+	right: 25%;
+	left: 32%;
+	position: relative;
+}
+#canvas {
+	position: absolute;
+	top: inherit;
+	left: 25%;
+	right: 25%;
+}
+.menubar a {
+	padding: 7px 7px;
+	float: right;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
