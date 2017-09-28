@@ -13,16 +13,44 @@ body h1 a {
 body h1 {
 	font-family: helvetica;
 	font-size: 36px;
-	top: 10%;
-	right: 25%;
-	left: 32%;
-	position: relative;
+	display: inline-block;
 }
+
+.homebar{
+	position: fixed; /* or absolute */
+	top: 72px;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+
+.content {
+	position: fixed;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: helvetica;
+	font-size: 12px;
+	top: 137px;
+}
+body h2 {
+	font-family: helvetica;
+	font-size: 16px;
+	position: fixed; /* or absolute */
+	top: 31%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: helvetica;
+	font-size: 16px;
+}
+
 #canvas {
-	position: absolute;
-	top: inherit;
-	left: 25%;
-	right: 25%;
+	position: fixed; /* or absolute */
+	top: 500px;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
 }
 .menubar a {
 	padding: 7px 7px;
