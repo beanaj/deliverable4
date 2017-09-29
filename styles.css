@@ -61,6 +61,29 @@ body h1 {
 	text-align: left;
 	font-style: normal;
 }
+.contentsearch {
+	position: absolute;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: pt-sans-narrow;
+	font-size: 15px;
+	top: 264px;
+	/* [disabled]border-radius: 10px; */
+	font-weight: 700;
+	border: thin solid #B3B3B3;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-style: normal;
+	min-width: 0px;
+}
+.contentsearch form .search {
+	color: #696464;
+	font-style: italic;
+}
 .contentlogin .login {
 	color: #939393;
 	text-align: left;
