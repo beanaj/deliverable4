@@ -2,9 +2,93 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>User Dashboard</title>
+<title>USER Dashboard</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/pt-sans-narrow:n4,n7:default.js" type="text/javascript"></script>
 </head>
 
 <body>
+	<div class = "menubar">
+		<a href="#login">HOME</a>
+	</div>
+	<div class = "dashheader">
+		<h3>USER DASHBOARD</h3>
+	</div>
+	<button class = "dashbuttons">CHANGE NAME +</button>
+	<div class = "options">
+		<forms>
+			<br>
+			<input type = "text" name = "name" value = "John Doe" class="login"><input type = "button" name = "changename" value = "Change" class="loginbut"><br>
+			<br>
+		</forms>
+	</div>
+	
+	<button class = "dashbuttons">CHANGE SHIPPING ADDRESS +</button>
+	<div class = "options">
+		<forms>
+			<br>
+			<input type = "text" name = "street" value = "street" class="login"><br>
+			<input type = "text" name = "city" value = "city" class="login"><br>
+			<input type = "text" name = "state" value = "state" class="login"><br>
+			<input type = "button" name = "changename" value = "Change" class="loginbut"><br>
+			<br>
+		</forms>
+	</div>
+	
+	<button class = "dashbuttons">CHANGE PAYMENT INFO +</button>
+<div class = "options">
+		<br>
+		<input type = "text" name = "cardnumber" value = "Card Number" class="login"><br>
+			<input type = "text" name = "type" value = "Type" class="login"><br>
+			Billing Address:<br>
+			<input type = "text" name = "street" value = "street" class="login"><br>
+			<input type = "text" name = "city" value = "city" class="login"><br>
+			<input type = "text" name = "state" value = "state" class="login"><br>
+			<input type = "button" name = "changename" value = "Change" class="loginbut"><br>
+			<br>
+	</div>
+	
+	<button class = "dashbuttons">CHANGE EMAIL +</button>
+	<div class = "options">
+			<br>
+			<input type = "text" name = "email" value = "Email" class="login"><input type = "button" name = "changename" value = "Change" class="loginbut"><br>
+			<br>
+	</div>
+	
+	<button class = "dashbuttons">CHANGE PASSWORD +</button>
+	<div class = "options">
+			<br>
+			<input type = "password" name = "password" value = "password" class="login"><br>
+			<input type = "password" name = "passwordverify" value = "password" class="login"><br>
+			<input type = "button" name = "changename" value = "Change" class="loginbut"><br>
+			<br>
+	</div>
+	
+	<button class = "dashbuttons">PROMOTIONS +</button>
+	<div class = "options">
+			<br>
+			Subscribe:
+			<input type = "checkbox" name = "subscribe" class="login"><br>
+			Unsubscribe:
+			<input type = "checkbox" name = "unsubscribe" class="login"><br>
+			<br>
+	</div>
+	
+	<script>
+		var acc = document.getElementsByClassName("dashbuttons");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+    		acc[i].onclick = function(){
+				this.classList.toggle("active");
+				var options = this.nextElementSibling;
+				if (options.style.display === "block") {
+					options.style.display = "none";
+				} else {
+					options.style.display = "block";
+				}
+			}
+		}
+	</script>
 </body>
 </html>

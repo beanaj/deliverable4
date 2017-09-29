@@ -176,6 +176,13 @@ div.panel {
 	color: #000000;
 	text-decoration: none;
 }
+.options  {
+	font-family: pt-sans-narrow;
+	font-style: normal;
+	font-weight: 400;
+	color: #000000;
+	text-decoration: none;
+}
 .menubar p {
 	float: left;
 	display: inherit;
