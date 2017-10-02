@@ -1,5 +1,10 @@
 # https://git-scm.com/docs/gitignore
 # https://help.github.com/articles/ignoring-files
+<<<<<<< HEAD
 # Example .gitignore files: https://github.com/github/gitignore
+=======
+# Example.gitignore files : https://github.com/github/gitignore
+_notes/
+>>>>>>> deliverable_4/master
 /bower_components/
 /node_modules/

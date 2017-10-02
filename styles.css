@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.menubar {
+	background-color: #FFD700;
+	overflow: hidden;
+	font-family: helvetica;
+}
+body h1 a {
+	text-decoration: none;
+	color: black;
+}
+body h1 {
+	font-family: helvetica;
+	font-size: 36px;
+	display: inline-block;
+}
+
+.homebar{
+	position: absolute; /* or absolute */
+	top: 72px;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+
+.content {
+	position: absolute;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: pt-sans-narrow;
+	font-size: 15px;
+	top: 266px;
+	/* [disabled]border-radius: 10px; */
+	font-weight: 700;
+	border: thin solid #B3B3B3;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-style: normal;
+}
+
+.contentlogin {
+	position: absolute;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: pt-sans-narrow;
+	font-size: 15px;
+	top: 169px;
+	/* [disabled]border-radius: 10px; */
+	font-weight: 700;
+	border: thin solid #B3B3B3;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-style: normal;
+}
+.contentsearch {
+	position: absolute;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: pt-sans-narrow;
+	font-size: 15px;
+	top: 264px;
+	/* [disabled]border-radius: 10px; */
+	font-weight: 700;
+	border: thin solid #B3B3B3;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-style: normal;
+	min-width: 0px;
+}
+.contentsearch form .search {
+	color: #696464;
+	font-style: italic;
+}
+.contentlogin .login {
+	color: #939393;
+	text-align: left;
+}
+.contentlogin .loginbut {
+	color: #000000;
+	text-align: left;
+}
+.content form .regin {
+	width: 150px;
+	height: 20px;
+	color: #797979;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body h2 {
+	font-family: helvetica;
+	font-size: 16px;
+	position: fixed; /* or absolute */
+	top: 31%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: helvetica;
+	font-size: 16px;
+}
+
+#canvas {
+	position: fixed; /* or absolute */
+	top: 500px;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+.menubar a {
+	padding: 7px 7px;
+	float: right;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+#wrapper {
+	margin-left: 200px;
+	font-family: helvetica;
+}
+#content {
+  float: right;
+  width: 100%;
+
+}
+#sidebar {
+  float: left;
+  width: 200px;
+  margin-left: -200px;
+}
+#cleared {
+  clear: both;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+button.dashbuttons {
+	background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+div.options {
+	padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+button.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 41px;
+	transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+	color: #000000;
+	font-family: pt-sans-narrow;
+	font-style: normal;
+	font-weight: 700;
+}
+.options a {
+	font-family: pt-sans-narrow;
+	font-style: normal;
+	font-weight: 400;
+	color: #000000;
+	text-decoration: none;
+}
+.options  {
+	font-family: pt-sans-narrow;
+	font-style: normal;
+	font-weight: 400;
+	color: #000000;
+	text-decoration: none;
+}
+.menubar p {
+	float: left;
+	display: inherit;
+}
+.dashheader h3 {
+	font-family: helvetica;
+	font-style: normal;
+	font-weight: 700;
+	text-align: left;
+	padding-left: 15px;
+}
