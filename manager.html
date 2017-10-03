@@ -24,12 +24,9 @@
 	</div>
 
 	<script>
-		var acc = document.getElementsByClassName("dashbuttons");
-		var i;
-
-		for (i = 0; i < acc.length; i++) {
-    		acc[i].onclick = function(){
-				this.classList.toggle("active");
+		var docu= document.getElementsByClassName("dashbuttons");
+		for (var i = 0; i < docu.length; i++) {
+    		docu[i].onclick = function(){
 				var options = this.nextElementSibling;
 				if (options.style.display === "block") {
 					options.style.display = "none";
