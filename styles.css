@@ -61,6 +61,24 @@ body h1 {
 	text-align: left;
 	font-style: normal;
 }
+.contentcheckout {
+	position: absolute;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	font-family: pt-sans-narrow;
+	font-size: 15px;
+	top: 199px;
+	/* [disabled]border-radius: 10px; */
+	font-weight: 700;
+	border: thin solid #B3B3B3;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-style: normal;
+}
 .contentsearch {
 	position: absolute;
 	left: 50%;
@@ -216,4 +234,15 @@ div.panel {
 	font-weight: 700;
 	text-align: left;
 	padding-left: 15px;
+}
+.checkout {
+	font-family: pt-sans-narrow;
+	font-style: normal;
+	font-weight: 700;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: x-large;
+	right: 0px;
+	float: right;
+	margin-top: 14px;
 }

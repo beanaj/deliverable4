@@ -2,21 +2,52 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Shopping Cart View</title>
+<title>Cart</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/pt-sans-narrow:n7:default.js" type="text/javascript"></script>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/pt-sans-narrow:n4,n7:default.js" type="text/javascript"></script>
 </head>
 
 <body>
-	<div class = "homebar">
-		<h1 align="center"><a href="">Add Book to Cart</a> | <a href="">Empty Cart</a> | <a href="">Checkout</a></h1>
+	<div class = "menubar">
+		<a href="#login">HOME</a>
 	</div>
-	<div class = "content">
-		<h3 align="center">Cart Items:</h3>
+	<div class = "dashheader">
+		<h3>Cart for CUSTOMER_NAME</h3>
+	</div>
+	<button class = "dashbuttons">BOOK_1 +</button>
+	<div class = "options">
+		<a href="#addremoveagency">REMOVE BOOK</a><br>
+		<a href="#authorize">CHANGE QUANTITY</a><br>
 	</div>
 
+	<button class = "dashbuttons">BOOK_2 +</button>
+	<div class = "options">
+		<a href="#addremoveagency">REMOVE BOOK</a><br>
+		<a href="#authorize">CHANGE QUANTITY</a><br>
+	</div>
+
+	<div>
+		<form>
+			<input type = "button" name = "name" value = "CHECKOUT" class = "checkout">
+			
+		</form>
+	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("dashbuttons");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+    		acc[i].onclick = function(){
+				this.classList.toggle("active");
+				var options = this.nextElementSibling;
+				if (options.style.display === "block") {
+					options.style.display = "none";
+				} else {
+					options.style.display = "block";
+				}
+			}
+		}
+	</script>
 </body>
-
 </html>
